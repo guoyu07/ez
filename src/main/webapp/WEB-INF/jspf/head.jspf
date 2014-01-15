@@ -1,0 +1,20 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<meta name="author" content="Gavin"/>
+<meta name="description" content="Easy Pro"/>
+<meta name="keywords" content="Easy Pro"/>
+<meta name="application-name" content="Easy Pro"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link href="${ctx}/static/css/font-awesome.css" rel="stylesheet"/>
+<!-- Main stylesheets -->
+<link href="${ctx}/static/css/main.css" rel="stylesheet"/>
+
+<script src="${ctx}/static/js/jquery.min.js"></script>
+
+<%@include file="/WEB-INF/jspf/import-easyui.jspf" %>
+<%@include file="/WEB-INF/jspf/import-ueditor.jspf" %>
+
+<script src="${ctx}/static/js/main.js"></script>

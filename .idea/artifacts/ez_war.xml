@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ez:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ez-0.01.war">
+      <element id="artifact" artifact-name="ez:war exploded" />
+    </root>
+  </artifact>
+</component>

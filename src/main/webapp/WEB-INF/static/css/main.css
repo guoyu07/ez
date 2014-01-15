@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table th {
+    float: right;
+    line-height: 2em;
+}
+
+#logo {
+    background:url('../images/logo.gif') no-repeat;
+    height: 60px;
+}
+
+.l-btn-text i.fa {
+    zoom: 1.2;
+    line-height: 1.4;
+}
+
+.tabs-icon.fa {
+    zoom: 1.2;
+    line-height: 1.4;
+}
+.panel-icon.fa {
+    zoom: 1.2;
+    line-height: 1.5;
+}
+.tree-icon.fa {
+    background: none;
+    zoom: 1.2;
+    line-height: 1.4;
+    margin-right: -4px;
+}
+.tree-icon.fa.fw {
+    margin-left: 1px;
+    margin-right: -2.5px;
+}
+
+.clear {
+    clear: both;
+}

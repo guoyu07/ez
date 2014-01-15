@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="jdbc.properties" /> 
+    <classPathEntry  location="F:\repositories\mysql\mysql-connector-java\5.1.26\mysql-connector-java-5.1.26.jar" />
+    <context id="MySQLTables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.username}" password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!--
+        The targetProject 
+        1) "MAVEN" (case sensitive), it will be set to the plugin's output directory. 
+        2) not "MAVEN", it must be set to a directory that already exists. 
+        <javaModelGenerator targetPackage="egox.ez.bean" targetProject="src/main/java">
+        here, it is setted "MAVEN", because the parameter "outputDirectory" in the pom.xml is already setted.
+        -->
+        <!-- generate Model --> 
+        <javaModelGenerator targetPackage="egox.ez.bean" targetProject="MAVEN">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- generate xml -->  
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- generate Mapper --> 
+        <javaClientGenerator type="XMLMAPPER" targetPackage="egox.ez.dao" targetProject="MAVEN">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        
+        <table tableName="sys_user" domainObjectName="User"></table>
+        <table tableName="sys_role" domainObjectName="Role"></table>
+        <table tableName="sys_permission" domainObjectName="Permission"></table>
+        <table tableName="sys_resource" domainObjectName="Resource"></table>
+
+    </context>
+</generatorConfiguration>
