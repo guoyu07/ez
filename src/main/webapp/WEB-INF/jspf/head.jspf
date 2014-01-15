@@ -12,7 +12,7 @@
 <!-- Main stylesheets -->
 <link href="${ctx}/static/css/main.css" rel="stylesheet"/>
 
-<script src="${ctx}/static/js/jquery.min.js"></script>
+<script src="${ctx}/static/js/jquery-2.0.3.min.js"></script>
 
 <%@include file="/WEB-INF/jspf/import-easyui.jspf" %>
 <%@include file="/WEB-INF/jspf/import-ueditor.jspf" %>

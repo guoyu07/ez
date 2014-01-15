@@ -8,6 +8,7 @@
         <c:when test="${isRoot}"><ul class="easyui-tree" data-options="
             animate: true,
             showOption: true,
+            iconCls:'${menu.icon}',
             toggleOnClick: true,
             onClick: function (node) {
                 window.mainpage.addModuleTab(node);
@@ -16,7 +17,7 @@
         <c:otherwise><ul></c:otherwise>
     </c:choose>
     <c:forEach items="${menu.children}" var="submenu">
-        <li data-options="iconCls:'${menu.icon}',id:'${menu.id}',attributes:{href:'${submenu.url}'}">
+        <li data-options="iconCls:'${submenu.icon}',id:'${menu.id}',attributes:{href:'${submenu.url}'}">
             <span>${submenu.name}</span>
             <up:tree menu="${submenu}" isRoot="false"/>
         </li>
