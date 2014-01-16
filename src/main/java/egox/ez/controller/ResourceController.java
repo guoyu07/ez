@@ -33,7 +33,7 @@ public class ResourceController extends AbstractController {
     @RequestMapping(value = "resource", method = RequestMethod.GET)
     public List<Resource> getAllUsers() {
         if (wantJson(request)) {
-            return null;
+            return resourceService.getAllResources();
         }
         return null;
     }

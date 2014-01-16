@@ -5,17 +5,18 @@ import egox.ez.bean.ResourceExample;
 import egox.ez.dao.ResourceMapper;
 import egox.ez.service.ResourceService;
 import egox.ez.ui.Menu;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
- *
  * @author Gavin
  */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Service("resourceService")
 public class ResourceServiceImpl implements ResourceService {
 

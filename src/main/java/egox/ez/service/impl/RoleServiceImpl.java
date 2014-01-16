@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- *
  * @author Gavin
  */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Service("roleService")
 public class RoleServiceImpl implements RoleService {
 

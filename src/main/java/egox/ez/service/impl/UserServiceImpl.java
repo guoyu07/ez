@@ -5,14 +5,15 @@ import egox.ez.bean.UserExample;
 import egox.ez.dao.UserMapper;
 import egox.ez.service.UserService;
 import egox.util.Md5Utils;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
- *
  * @author Gavin
  */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Service("userService")
 public class UserServiceImpl implements UserService {
 

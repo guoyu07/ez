@@ -33,17 +33,17 @@ public class SecurityController extends AbstractController {
      * @return
      */
     @RequestMapping(method = RequestMethod.GET, value = "login")
-    public ModelAndView login() {
+    public String login() {
         Subject subject = SecurityUtils.getSubject();
         if (subject != null && subject.isAuthenticated()) {
             subject.logout();
         }
-        return new ModelAndView("login");
+        return "login";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "login")
-    public ModelAndView fail() {
-        return new ModelAndView("login");
+    public String fail() {
+        return "login";
     }
 
     @RequestMapping("logout")
