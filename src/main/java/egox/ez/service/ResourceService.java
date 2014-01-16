@@ -15,5 +15,5 @@ public interface ResourceService {
     
     List<Resource> getAllResources();
     
-    public List<Menu> convetToMenus(List<Resource> resources);
+    public List<Menu> convertToMenus(List<Resource> resources);
 }

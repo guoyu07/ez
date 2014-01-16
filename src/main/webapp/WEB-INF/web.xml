@@ -5,24 +5,13 @@
 
     <!-- 发生错误，页面跳转 开始 -->
     <error-page>
-        <error-code>403</error-code>
-        <location>/WEB-INF/jsp/common/error/403.jsp</location>
-    </error-page>
-    <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/jsp/common/error/404.jsp</location>
     </error-page>
-    <error-page>
-        <error-code>405</error-code>
-        <location>/WEB-INF/jsp/common/error/405.jsp</location>
-    </error-page>
+
     <error-page>
         <error-code>500</error-code>
         <location>/WEB-INF/jsp/common/error/500.jsp</location>
-    </error-page>
-    <error-page>
-        <error-code>503</error-code>
-        <location>/WEB-INF/jsp/common/error/503.jsp</location>
     </error-page>
     <!-- 发生错误，页面跳转 结束 -->
     

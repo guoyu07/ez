@@ -11,7 +11,9 @@
 
 <h1>Hello,users!</h1>
 
-<h3>bb: ${pageContext.request.contextPath}</h3>
+<h3>${pageContext.request.contextPath}</h3>
+
+<h4>${pageContext.request}</h4>
 <table id="example" class="display" cellspacing="0" width="100%">
 <thead>
 <tr>

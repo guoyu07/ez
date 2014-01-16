@@ -7,8 +7,8 @@
     </div>
 
     <div style="position: absolute; right: 0px; bottom: 0px;">
-        <a href="javascript:void(0)" class="easyui-linkbutton"><i class="fa fa-edit fa-fw"></i>修改密码</a>
-        <a href="logout" class="easyui-linkbutton"><i class="fa fa-sign-out fa-fw"></i>退出系统</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-standard-lock-edit">修改密码</a>
+        <a href="logout" class="easyui-linkbutton" iconCls="icon-hamburg-sign-out">退出系统</a>
     </div>
 
 </div>

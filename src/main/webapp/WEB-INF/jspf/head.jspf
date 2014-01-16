@@ -8,13 +8,14 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<link href="${ctx}/static/css/font-awesome.css" rel="stylesheet"/>
-<!-- Main stylesheets -->
-<link href="${ctx}/static/css/main.css" rel="stylesheet"/>
-
 <script src="${ctx}/static/js/jquery-2.0.3.min.js"></script>
 
 <%@include file="/WEB-INF/jspf/import-easyui.jspf" %>
 <%@include file="/WEB-INF/jspf/import-ueditor.jspf" %>
 
 <script src="${ctx}/static/js/main.js"></script>
+
+
+<!-- Main stylesheets -->
+<link href="${ctx}/static/css/main.css" rel="stylesheet"/>
+<link href="${ctx}/static/css/demo.css" rel="stylesheet"/>

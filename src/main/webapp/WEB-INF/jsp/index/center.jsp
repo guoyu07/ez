@@ -20,7 +20,7 @@
         </tr>
     </table>
 </div>
-<div id="mainTab" class="easyui-tabs" data-options="fit: true, tools: '#mainTab_tools'">
+<div id="mainTab" class="easyui-tabs" data-options="lineHeight:0, fit: true, tools: '#mainTab_tools'">
     <div id="homePanel" data-options="title: '主页', iconCls: 'icon-hamburg-home',closable:true, selected: true, href:'welcome'">
         <h1>home page</h1>
     </div>

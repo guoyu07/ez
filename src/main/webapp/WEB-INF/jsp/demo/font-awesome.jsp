@@ -5,36 +5,763 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <head>
-    <%@ include file="/WEB-INF/jspf/head.jspf" %>
-        <style type="text/css">
+<head>
+<%@ include file="/WEB-INF/jspf/head.jspf" %>
 
-        html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-        body{font-family:proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
-        a{color:#21b384;text-decoration:none}a:hover,a:focus{color:#198764;text-decoration:underline}
+<link href="${ctx}/static/css/font-awesome.css" rel="stylesheet"/>
 
-        .container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.container:before,.container:after{content:" ";display:table;}
-        .row{margin-left:-15px;margin-right:-15px}.row:before,.row:after{content:" ";display:table;}
-        .row:after{clear:both}
-        .row:before,.row:after{content:" ";display:table;}
+<style type="text/css">
 
-        .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}
-        .alert>p,.alert>ul{margin-bottom:0}
-        .alert>p+p{margin-top:5px}
-        .alert-success{background-color:#f1f9f7;border-color:#e0f1e9;color:#1d9d74}.alert-success hr{border-top-color:#ceeadc}
-        html,body{height:100%}
-        #wrap{min-height:100%;height:auto !important;height:100%}
-        #wrap{margin:0 auto -165px;padding:0 0 225px}
-        .padding-left-lg{padding-left:22px !important}
-        .margin-bottom-none{margin-bottom:0 !important}
-        @media (min-width:768px){.container{max-width:750px} .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11{float:left} .col-sm-1{width:8.333333333333332%} .col-sm-2{width:16.666666666666664%} .col-sm-3{width:25%} .col-sm-4{width:33.33333333333333%} .col-sm-5{width:41.66666666666667%} .col-sm-6{width:50%} .col-sm-7{width:58.333333333333336%} .col-sm-8{width:66.66666666666666%} .col-sm-9{width:75%} .col-sm-10{width:83.33333333333334%} .col-sm-11{width:91.66666666666666%} .col-sm-12{width:100%} .col-sm-push-1{left:8.333333333333332%} .col-sm-push-2{left:16.666666666666664%} .col-sm-push-3{left:25%} .col-sm-push-4{left:33.33333333333333%} .col-sm-push-5{left:41.66666666666667%} .col-sm-push-6{left:50%} .col-sm-push-7{left:58.333333333333336%} .col-sm-push-8{left:66.66666666666666%} .col-sm-push-9{left:75%} .col-sm-push-10{left:83.33333333333334%} .col-sm-push-11{left:91.66666666666666%} .col-sm-pull-1{right:8.333333333333332%} .col-sm-pull-2{right:16.666666666666664%} .col-sm-pull-3{right:25%} .col-sm-pull-4{right:33.33333333333333%} .col-sm-pull-5{right:41.66666666666667%} .col-sm-pull-6{right:50%} .col-sm-pull-7{right:58.333333333333336%} .col-sm-pull-8{right:66.66666666666666%} .col-sm-pull-9{right:75%} .col-sm-pull-10{right:83.33333333333334%} .col-sm-pull-11{right:91.66666666666666%} .col-sm-offset-1{margin-left:8.333333333333332%} .col-sm-offset-2{margin-left:16.666666666666664%} .col-sm-offset-3{margin-left:25%} .col-sm-offset-4{margin-left:33.33333333333333%} .col-sm-offset-5{margin-left:41.66666666666667%} .col-sm-offset-6{margin-left:50%} .col-sm-offset-7{margin-left:58.333333333333336%} .col-sm-offset-8{margin-left:66.66666666666666%} .col-sm-offset-9{margin-left:75%} .col-sm-offset-10{margin-left:83.33333333333334%} .col-sm-offset-11{margin-left:91.66666666666666%}}@media (min-width:992px){.container{max-width:970px} .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11{float:left} .col-md-1{width:8.333333333333332%} .col-md-2{width:16.666666666666664%} .col-md-3{width:25%} .col-md-4{width:33.33333333333333%} .col-md-5{width:41.66666666666667%} .col-md-6{width:50%} .col-md-7{width:58.333333333333336%} .col-md-8{width:66.66666666666666%} .col-md-9{width:75%} .col-md-10{width:83.33333333333334%} .col-md-11{width:91.66666666666666%} .col-md-12{width:100%} .col-md-push-0{left:auto} .col-md-push-1{left:8.333333333333332%} .col-md-push-2{left:16.666666666666664%} .col-md-push-3{left:25%} .col-md-push-4{left:33.33333333333333%} .col-md-push-5{left:41.66666666666667%} .col-md-push-6{left:50%} .col-md-push-7{left:58.333333333333336%} .col-md-push-8{left:66.66666666666666%} .col-md-push-9{left:75%} .col-md-push-10{left:83.33333333333334%} .col-md-push-11{left:91.66666666666666%} .col-md-pull-0{right:auto} .col-md-pull-1{right:8.333333333333332%} .col-md-pull-2{right:16.666666666666664%} .col-md-pull-3{right:25%} .col-md-pull-4{right:33.33333333333333%} .col-md-pull-5{right:41.66666666666667%} .col-md-pull-6{right:50%} .col-md-pull-7{right:58.333333333333336%} .col-md-pull-8{right:66.66666666666666%} .col-md-pull-9{right:75%} .col-md-pull-10{right:83.33333333333334%} .col-md-pull-11{right:91.66666666666666%} .col-md-offset-0{margin-left:0} .col-md-offset-1{margin-left:8.333333333333332%} .col-md-offset-2{margin-left:16.666666666666664%} .col-md-offset-3{margin-left:25%} .col-md-offset-4{margin-left:33.33333333333333%} .col-md-offset-5{margin-left:41.66666666666667%} .col-md-offset-6{margin-left:50%} .col-md-offset-7{margin-left:58.333333333333336%} .col-md-offset-8{margin-left:66.66666666666666%} .col-md-offset-9{margin-left:75%} .col-md-offset-10{margin-left:83.33333333333334%} .col-md-offset-11{margin-left:91.66666666666666%}}@media (min-width:1200px){.container{max-width:1170px} .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11{float:left} .col-lg-1{width:8.333333333333332%} .col-lg-2{width:16.666666666666664%} .col-lg-3{width:25%} .col-lg-4{width:33.33333333333333%} .col-lg-5{width:41.66666666666667%} .col-lg-6{width:50%} .col-lg-7{width:58.333333333333336%} .col-lg-8{width:66.66666666666666%} .col-lg-9{width:75%} .col-lg-10{width:83.33333333333334%} .col-lg-11{width:91.66666666666666%} .col-lg-12{width:100%} .col-lg-push-0{left:auto} .col-lg-push-1{left:8.333333333333332%} .col-lg-push-2{left:16.666666666666664%} .col-lg-push-3{left:25%} .col-lg-push-4{left:33.33333333333333%} .col-lg-push-5{left:41.66666666666667%} .col-lg-push-6{left:50%} .col-lg-push-7{left:58.333333333333336%} .col-lg-push-8{left:66.66666666666666%} .col-lg-push-9{left:75%} .col-lg-push-10{left:83.33333333333334%} .col-lg-push-11{left:91.66666666666666%} .col-lg-pull-0{right:auto} .col-lg-pull-1{right:8.333333333333332%} .col-lg-pull-2{right:16.666666666666664%} .col-lg-pull-3{right:25%} .col-lg-pull-4{right:33.33333333333333%} .col-lg-pull-5{right:41.66666666666667%} .col-lg-pull-6{right:50%} .col-lg-pull-7{right:58.333333333333336%} .col-lg-pull-8{right:66.66666666666666%} .col-lg-pull-9{right:75%} .col-lg-pull-10{right:83.33333333333334%} .col-lg-pull-11{right:91.66666666666666%} .col-lg-offset-0{margin-left:0} .col-lg-offset-1{margin-left:8.333333333333332%} .col-lg-offset-2{margin-left:16.666666666666664%} .col-lg-offset-3{margin-left:25%} .col-lg-offset-4{margin-left:33.33333333333333%} .col-lg-offset-5{margin-left:41.66666666666667%} .col-lg-offset-6{margin-left:50%} .col-lg-offset-7{margin-left:58.333333333333336%} .col-lg-offset-8{margin-left:66.66666666666666%} .col-lg-offset-9{margin-left:75%} .col-lg-offset-10{margin-left:83.33333333333334%} .col-lg-offset-11{margin-left:91.66666666666666%}}table{max-width:100%;background-color:transparent}
-        .page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}
-        .fontawesome-icon-list{margin-top:22px}.fontawesome-icon-list .fa-hover a{display:block;color:#222;line-height:32px;height:32px;padding-left:10px;border-radius:4px}.fontawesome-icon-list .fa-hover a .fa{width:32px;font-size:14px;display:inline-block;text-align:right;margin-right:10px}
-        .fontawesome-icon-list .fa-hover a:hover{background-color:#1d9d74;color:#fff;text-decoration:none}.fontawesome-icon-list .fa-hover a:hover .fa{font-size:28px;vertical-align:-6px}
-        .fontawesome-icon-list .fa-hover a:hover .text-muted{color:#bbe2d5}
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
 
-        </style>
-    </head>
+body {
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff
+}
+
+a {
+    color: #21b384;
+    text-decoration: none
+}
+
+a:hover, a:focus {
+    color: #198764;
+    text-decoration: underline
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.alert h4 {
+    margin-top: 0;
+    color: inherit
+}
+
+.alert > p, .alert > ul {
+    margin-bottom: 0
+}
+
+.alert > p + p {
+    margin-top: 5px
+}
+
+.alert-success {
+    background-color: #f1f9f7;
+    border-color: #e0f1e9;
+    color: #1d9d74
+}
+
+.alert-success hr {
+    border-top-color: #ceeadc
+}
+
+html, body {
+    height: 100%
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%
+}
+
+#wrap {
+    margin: 0 auto -165px;
+    padding: 0 0 225px
+}
+
+.padding-left-lg {
+    padding-left: 22px !important
+}
+
+.margin-bottom-none {
+    margin-bottom: 0 !important
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px
+    }
+
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+        float: left
+    }
+
+    .col-sm-1 {
+        width: 8.333333333333332%
+    }
+
+    .col-sm-2 {
+        width: 16.666666666666664%
+    }
+
+    .col-sm-3 {
+        width: 25%
+    }
+
+    .col-sm-4 {
+        width: 33.33333333333333%
+    }
+
+    .col-sm-5 {
+        width: 41.66666666666667%
+    }
+
+    .col-sm-6 {
+        width: 50%
+    }
+
+    .col-sm-7 {
+        width: 58.333333333333336%
+    }
+
+    .col-sm-8 {
+        width: 66.66666666666666%
+    }
+
+    .col-sm-9 {
+        width: 75%
+    }
+
+    .col-sm-10 {
+        width: 83.33333333333334%
+    }
+
+    .col-sm-11 {
+        width: 91.66666666666666%
+    }
+
+    .col-sm-12 {
+        width: 100%
+    }
+
+    .col-sm-push-1 {
+        left: 8.333333333333332%
+    }
+
+    .col-sm-push-2 {
+        left: 16.666666666666664%
+    }
+
+    .col-sm-push-3 {
+        left: 25%
+    }
+
+    .col-sm-push-4 {
+        left: 33.33333333333333%
+    }
+
+    .col-sm-push-5 {
+        left: 41.66666666666667%
+    }
+
+    .col-sm-push-6 {
+        left: 50%
+    }
+
+    .col-sm-push-7 {
+        left: 58.333333333333336%
+    }
+
+    .col-sm-push-8 {
+        left: 66.66666666666666%
+    }
+
+    .col-sm-push-9 {
+        left: 75%
+    }
+
+    .col-sm-push-10 {
+        left: 83.33333333333334%
+    }
+
+    .col-sm-push-11 {
+        left: 91.66666666666666%
+    }
+
+    .col-sm-pull-1 {
+        right: 8.333333333333332%
+    }
+
+    .col-sm-pull-2 {
+        right: 16.666666666666664%
+    }
+
+    .col-sm-pull-3 {
+        right: 25%
+    }
+
+    .col-sm-pull-4 {
+        right: 33.33333333333333%
+    }
+
+    .col-sm-pull-5 {
+        right: 41.66666666666667%
+    }
+
+    .col-sm-pull-6 {
+        right: 50%
+    }
+
+    .col-sm-pull-7 {
+        right: 58.333333333333336%
+    }
+
+    .col-sm-pull-8 {
+        right: 66.66666666666666%
+    }
+
+    .col-sm-pull-9 {
+        right: 75%
+    }
+
+    .col-sm-pull-10 {
+        right: 83.33333333333334%
+    }
+
+    .col-sm-pull-11 {
+        right: 91.66666666666666%
+    }
+
+    .col-sm-offset-1 {
+        margin-left: 8.333333333333332%
+    }
+
+    .col-sm-offset-2 {
+        margin-left: 16.666666666666664%
+    }
+
+    .col-sm-offset-3 {
+        margin-left: 25%
+    }
+
+    .col-sm-offset-4 {
+        margin-left: 33.33333333333333%
+    }
+
+    .col-sm-offset-5 {
+        margin-left: 41.66666666666667%
+    }
+
+    .col-sm-offset-6 {
+        margin-left: 50%
+    }
+
+    .col-sm-offset-7 {
+        margin-left: 58.333333333333336%
+    }
+
+    .col-sm-offset-8 {
+        margin-left: 66.66666666666666%
+    }
+
+    .col-sm-offset-9 {
+        margin-left: 75%
+    }
+
+    .col-sm-offset-10 {
+        margin-left: 83.33333333333334%
+    }
+
+    .col-sm-offset-11 {
+        margin-left: 91.66666666666666%
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px
+    }
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+        float: left
+    }
+
+    .col-md-1 {
+        width: 8.333333333333332%
+    }
+
+    .col-md-2 {
+        width: 16.666666666666664%
+    }
+
+    .col-md-3 {
+        width: 25%
+    }
+
+    .col-md-4 {
+        width: 33.33333333333333%
+    }
+
+    .col-md-5 {
+        width: 41.66666666666667%
+    }
+
+    .col-md-6 {
+        width: 50%
+    }
+
+    .col-md-7 {
+        width: 58.333333333333336%
+    }
+
+    .col-md-8 {
+        width: 66.66666666666666%
+    }
+
+    .col-md-9 {
+        width: 75%
+    }
+
+    .col-md-10 {
+        width: 83.33333333333334%
+    }
+
+    .col-md-11 {
+        width: 91.66666666666666%
+    }
+
+    .col-md-12 {
+        width: 100%
+    }
+
+    .col-md-push-0 {
+        left: auto
+    }
+
+    .col-md-push-1 {
+        left: 8.333333333333332%
+    }
+
+    .col-md-push-2 {
+        left: 16.666666666666664%
+    }
+
+    .col-md-push-3 {
+        left: 25%
+    }
+
+    .col-md-push-4 {
+        left: 33.33333333333333%
+    }
+
+    .col-md-push-5 {
+        left: 41.66666666666667%
+    }
+
+    .col-md-push-6 {
+        left: 50%
+    }
+
+    .col-md-push-7 {
+        left: 58.333333333333336%
+    }
+
+    .col-md-push-8 {
+        left: 66.66666666666666%
+    }
+
+    .col-md-push-9 {
+        left: 75%
+    }
+
+    .col-md-push-10 {
+        left: 83.33333333333334%
+    }
+
+    .col-md-push-11 {
+        left: 91.66666666666666%
+    }
+
+    .col-md-pull-0 {
+        right: auto
+    }
+
+    .col-md-pull-1 {
+        right: 8.333333333333332%
+    }
+
+    .col-md-pull-2 {
+        right: 16.666666666666664%
+    }
+
+    .col-md-pull-3 {
+        right: 25%
+    }
+
+    .col-md-pull-4 {
+        right: 33.33333333333333%
+    }
+
+    .col-md-pull-5 {
+        right: 41.66666666666667%
+    }
+
+    .col-md-pull-6 {
+        right: 50%
+    }
+
+    .col-md-pull-7 {
+        right: 58.333333333333336%
+    }
+
+    .col-md-pull-8 {
+        right: 66.66666666666666%
+    }
+
+    .col-md-pull-9 {
+        right: 75%
+    }
+
+    .col-md-pull-10 {
+        right: 83.33333333333334%
+    }
+
+    .col-md-pull-11 {
+        right: 91.66666666666666%
+    }
+
+    .col-md-offset-0 {
+        margin-left: 0
+    }
+
+    .col-md-offset-1 {
+        margin-left: 8.333333333333332%
+    }
+
+    .col-md-offset-2 {
+        margin-left: 16.666666666666664%
+    }
+
+    .col-md-offset-3 {
+        margin-left: 25%
+    }
+
+    .col-md-offset-4 {
+        margin-left: 33.33333333333333%
+    }
+
+    .col-md-offset-5 {
+        margin-left: 41.66666666666667%
+    }
+
+    .col-md-offset-6 {
+        margin-left: 50%
+    }
+
+    .col-md-offset-7 {
+        margin-left: 58.333333333333336%
+    }
+
+    .col-md-offset-8 {
+        margin-left: 66.66666666666666%
+    }
+
+    .col-md-offset-9 {
+        margin-left: 75%
+    }
+
+    .col-md-offset-10 {
+        margin-left: 83.33333333333334%
+    }
+
+    .col-md-offset-11 {
+        margin-left: 91.66666666666666%
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px
+    }
+
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+        float: left
+    }
+
+    .col-lg-1 {
+        width: 8.333333333333332%
+    }
+
+    .col-lg-2 {
+        width: 16.666666666666664%
+    }
+
+    .col-lg-3 {
+        width: 25%
+    }
+
+    .col-lg-4 {
+        width: 33.33333333333333%
+    }
+
+    .col-lg-5 {
+        width: 41.66666666666667%
+    }
+
+    .col-lg-6 {
+        width: 50%
+    }
+
+    .col-lg-7 {
+        width: 58.333333333333336%
+    }
+
+    .col-lg-8 {
+        width: 66.66666666666666%
+    }
+
+    .col-lg-9 {
+        width: 75%
+    }
+
+    .col-lg-10 {
+        width: 83.33333333333334%
+    }
+
+    .col-lg-11 {
+        width: 91.66666666666666%
+    }
+
+    .col-lg-12 {
+        width: 100%
+    }
+
+    .col-lg-push-0 {
+        left: auto
+    }
+
+    .col-lg-push-1 {
+        left: 8.333333333333332%
+    }
+
+    .col-lg-push-2 {
+        left: 16.666666666666664%
+    }
+
+    .col-lg-push-3 {
+        left: 25%
+    }
+
+    .col-lg-push-4 {
+        left: 33.33333333333333%
+    }
+
+    .col-lg-push-5 {
+        left: 41.66666666666667%
+    }
+
+    .col-lg-push-6 {
+        left: 50%
+    }
+
+    .col-lg-push-7 {
+        left: 58.333333333333336%
+    }
+
+    .col-lg-push-8 {
+        left: 66.66666666666666%
+    }
+
+    .col-lg-push-9 {
+        left: 75%
+    }
+
+    .col-lg-push-10 {
+        left: 83.33333333333334%
+    }
+
+    .col-lg-push-11 {
+        left: 91.66666666666666%
+    }
+
+    .col-lg-pull-0 {
+        right: auto
+    }
+
+    .col-lg-pull-1 {
+        right: 8.333333333333332%
+    }
+
+    .col-lg-pull-2 {
+        right: 16.666666666666664%
+    }
+
+    .col-lg-pull-3 {
+        right: 25%
+    }
+
+    .col-lg-pull-4 {
+        right: 33.33333333333333%
+    }
+
+    .col-lg-pull-5 {
+        right: 41.66666666666667%
+    }
+
+    .col-lg-pull-6 {
+        right: 50%
+    }
+
+    .col-lg-pull-7 {
+        right: 58.333333333333336%
+    }
+
+    .col-lg-pull-8 {
+        right: 66.66666666666666%
+    }
+
+    .col-lg-pull-9 {
+        right: 75%
+    }
+
+    .col-lg-pull-10 {
+        right: 83.33333333333334%
+    }
+
+    .col-lg-pull-11 {
+        right: 91.66666666666666%
+    }
+
+    .col-lg-offset-0 {
+        margin-left: 0
+    }
+
+    .col-lg-offset-1 {
+        margin-left: 8.333333333333332%
+    }
+
+    .col-lg-offset-2 {
+        margin-left: 16.666666666666664%
+    }
+
+    .col-lg-offset-3 {
+        margin-left: 25%
+    }
+
+    .col-lg-offset-4 {
+        margin-left: 33.33333333333333%
+    }
+
+    .col-lg-offset-5 {
+        margin-left: 41.66666666666667%
+    }
+
+    .col-lg-offset-6 {
+        margin-left: 50%
+    }
+
+    .col-lg-offset-7 {
+        margin-left: 58.333333333333336%
+    }
+
+    .col-lg-offset-8 {
+        margin-left: 66.66666666666666%
+    }
+
+    .col-lg-offset-9 {
+        margin-left: 75%
+    }
+
+    .col-lg-offset-10 {
+        margin-left: 83.33333333333334%
+    }
+
+    .col-lg-offset-11 {
+        margin-left: 91.66666666666666%
+    }
+}
+
+table {
+    max-width: 100%;
+    background-color: transparent
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee
+}
+
+.fontawesome-icon-list {
+    margin-top: 22px
+}
+
+.fontawesome-icon-list .fa-hover a {
+    display: block;
+    color: #222;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 4px
+}
+
+.fontawesome-icon-list .fa-hover a .fa {
+    width: 32px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px
+}
+
+.fontawesome-icon-list .fa-hover a:hover {
+    background-color: #1d9d74;
+    color: #fff;
+    text-decoration: none
+}
+
+.fontawesome-icon-list .fa-hover a:hover .fa {
+    font-size: 28px;
+    vertical-align: -6px
+}
+
+.fontawesome-icon-list .fa-hover a:hover .text-muted {
+    color: #bbe2d5
+}
+
+</style>
+</head>
 <body>
 <div id="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
 
@@ -47,21 +774,27 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rub"></i> fa-rub</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ruble"></i> fa-ruble <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ruble"></i> fa-ruble <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-pagelines"></i> fa-pagelines</a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-stack-exchange"></i> fa-stack-exchange</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-right"></i>
+            fa-arrow-circle-o-right</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></div>
 
@@ -71,7 +804,8 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-try"></i> fa-try</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></div>
 
@@ -198,7 +932,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-cutlery"></i> fa-cutlery</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dashboard"></i> fa-dashboard <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dashboard"></i> fa-dashboard <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-desktop"></i> fa-desktop</a></div>
 
@@ -206,7 +941,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-download"></i> fa-download</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-edit"></i> fa-edit <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-edit"></i> fa-edit <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ellipsis-h"></i> fa-ellipsis-h</a></div>
 
@@ -252,7 +988,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-flag-o"></i> fa-flag-o</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-flash"></i> fa-flash <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-flash"></i> fa-flash <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-flask"></i> fa-flask</a></div>
 
@@ -270,9 +1007,11 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gavel"></i> fa-gavel</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gear"></i> fa-gear <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gear"></i> fa-gear <span
+        class="text-muted">(alias)</span></a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gears"></i> fa-gears <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gears"></i> fa-gears <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gift"></i> fa-gift</a></div>
 
@@ -280,7 +1019,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-globe"></i> fa-globe</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-group"></i> fa-group <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-group"></i> fa-group <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-hdd-o"></i> fa-hdd-o</a></div>
 
@@ -306,7 +1046,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-leaf"></i> fa-leaf</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-legal"></i> fa-legal <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-legal"></i> fa-legal <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-lemon-o"></i> fa-lemon-o</a></div>
 
@@ -324,9 +1065,11 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-magnet"></i> fa-magnet</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mail-forward"></i> fa-mail-forward <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mail-forward"></i> fa-mail-forward <span class="text-muted">(alias)</span></a>
+</div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mail-reply"></i> fa-mail-reply <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mail-reply"></i> fa-mail-reply <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mail-reply-all"></i> fa-mail-reply-all</a></div>
 
@@ -350,7 +1093,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mobile"></i> fa-mobile</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mobile-phone"></i> fa-mobile-phone <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-mobile-phone"></i> fa-mobile-phone <span class="text-muted">(alias)</span></a>
+</div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-money"></i> fa-money</a></div>
 
@@ -454,13 +1198,15 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-desc"></i> fa-sort-desc</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-down"></i> fa-sort-down <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-down"></i> fa-sort-down <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-numeric-asc"></i> fa-sort-numeric-asc</a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-numeric-desc"></i> fa-sort-numeric-desc</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-up"></i> fa-sort-up <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-sort-up"></i> fa-sort-up <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-spinner"></i> fa-spinner</a></div>
 
@@ -472,9 +1218,11 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half"></i> fa-star-half</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half-empty"></i> fa-star-half-empty <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half-empty"></i> fa-star-half-empty <span
+        class="text-muted">(alias)</span></a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half-full"></i> fa-star-half-full <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half-full"></i> fa-star-half-full <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-star-half-o"></i> fa-star-half-o</a></div>
 
@@ -520,13 +1268,17 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-tint"></i> fa-tint</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a>
+</div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a>
+</div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a>
+</div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-up"></i> fa-toggle-up <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-up"></i> fa-toggle-up <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-trash-o"></i> fa-trash-o</a></div>
 
@@ -540,7 +1292,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-unlock-alt"></i> fa-unlock-alt</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-unsorted"></i> fa-unsorted <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-unsorted"></i> fa-unsorted <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-upload"></i> fa-upload</a></div>
 
@@ -556,7 +1309,8 @@
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-volume-up"></i> fa-volume-up</a></div>
 
-<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-warning"></i> fa-warning <span class="text-muted">(alias)</span></a></div>
+<div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-warning"></i> fa-warning <span
+        class="text-muted">(alias)</span></a></div>
 
 <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-wheelchair"></i> fa-wheelchair</a></div>
 
@@ -570,7 +1324,6 @@
     <h2 class="page-header">Form Control Icons</h2>
 
     <div class="row fontawesome-icon-list">
-
 
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-check-square"></i> fa-check-square</a></div>
@@ -604,18 +1357,21 @@
     <div class="row fontawesome-icon-list">
 
 
-
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-btc"></i> fa-btc</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-cny"></i> fa-cny <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-cny"></i> fa-cny <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dollar"></i> fa-dollar <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dollar"></i> fa-dollar <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-eur"></i> fa-eur</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-euro"></i> fa-euro <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-euro"></i> fa-euro <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-gbp"></i> fa-gbp</a></div>
 
@@ -627,25 +1383,32 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-money"></i> fa-money</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rmb"></i> fa-rmb <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rmb"></i> fa-rmb <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rouble"></i> fa-rouble <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rub"></i> fa-rub</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ruble"></i> fa-ruble <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ruble"></i> fa-ruble <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rupee"></i> fa-rupee <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rupee"></i> fa-rupee <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-try"></i> fa-try</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-turkish-lira"></i> fa-turkish-lira <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-usd"></i> fa-usd</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-won"></i> fa-won <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-won"></i> fa-won <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-yen"></i> fa-yen <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-yen"></i> fa-yen <span
+                class="text-muted">(alias)</span></a></div>
 
     </div>
 
@@ -655,7 +1418,6 @@
     <h2 class="page-header">Text Editor Icons</h2>
 
     <div class="row fontawesome-icon-list">
-
 
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-align-center"></i> fa-align-center</a></div>
@@ -668,7 +1430,8 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bold"></i> fa-bold</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chain"></i> fa-chain <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chain"></i> fa-chain <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chain-broken"></i> fa-chain-broken</a></div>
 
@@ -676,11 +1439,14 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-columns"></i> fa-columns</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-copy"></i> fa-copy <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-copy"></i> fa-copy <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-cut"></i> fa-cut <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-cut"></i> fa-cut <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dedent"></i> fa-dedent <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-dedent"></i> fa-dedent <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-eraser"></i> fa-eraser</a></div>
 
@@ -716,15 +1482,19 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-paperclip"></i> fa-paperclip</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-paste"></i> fa-paste <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-paste"></i> fa-paste <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-repeat"></i> fa-repeat</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rotate-left"></i> fa-rotate-left <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rotate-left"></i> fa-rotate-left <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rotate-right"></i> fa-rotate-right <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-rotate-right"></i> fa-rotate-right <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-save"></i> fa-save <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-save"></i> fa-save <span
+                class="text-muted">(alias)</span></a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-scissors"></i> fa-scissors</a></div>
 
@@ -746,7 +1516,8 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-undo"></i> fa-undo</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-unlink"></i> fa-unlink <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-unlink"></i> fa-unlink <span class="text-muted">(alias)</span></a>
+        </div>
 
     </div>
 
@@ -758,12 +1529,14 @@
     <div class="row fontawesome-icon-list">
 
 
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-down"></i> fa-angle-double-down</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-down"></i> fa-angle-double-down</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-left"></i> fa-angle-double-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-left"></i> fa-angle-double-left</a></div>
-
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-right"></i> fa-angle-double-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-right"></i> fa-angle-double-right</a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-double-up"></i> fa-angle-double-up</a></div>
 
@@ -775,19 +1548,26 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-angle-up"></i> fa-angle-up</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-down"></i> fa-arrow-circle-down</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-down"></i> fa-arrow-circle-down</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-left"></i> fa-arrow-circle-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-left"></i> fa-arrow-circle-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-down"></i> fa-arrow-circle-o-down</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-down"></i> fa-arrow-circle-o-down</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-right"></i>
+            fa-arrow-circle-o-right</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-up"></i> fa-arrow-circle-o-up</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-o-up"></i> fa-arrow-circle-o-up</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-right"></i> fa-arrow-circle-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-right"></i> fa-arrow-circle-right</a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrow-circle-up"></i> fa-arrow-circle-up</a></div>
 
@@ -813,23 +1593,31 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-right"></i> fa-caret-right</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-right"></i>
+            fa-caret-square-o-right</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-caret-up"></i> fa-caret-up</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-down"></i> fa-chevron-circle-down</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-down"></i> fa-chevron-circle-down</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-left"></i> fa-chevron-circle-left</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-left"></i> fa-chevron-circle-left</a>
+        </div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-right"></i> fa-chevron-circle-right</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-right"></i>
+            fa-chevron-circle-right</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-up"></i> fa-chevron-circle-up</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-circle-up"></i> fa-chevron-circle-up</a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-chevron-down"></i> fa-chevron-down</a></div>
 
@@ -855,13 +1643,17 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-long-arrow-up"></i> fa-long-arrow-up</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-down"></i> fa-toggle-down <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-down"></i> fa-toggle-down <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-left"></i> fa-toggle-left <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-right"></i> fa-toggle-right <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-right"></i> fa-toggle-right <span
+                class="text-muted">(alias)</span></a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-up"></i> fa-toggle-up <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-toggle-up"></i> fa-toggle-up <span
+                class="text-muted">(alias)</span></a></div>
 
     </div>
 
@@ -871,7 +1663,6 @@
     <h2 class="page-header">Video Player Icons</h2>
 
     <div class="row fontawesome-icon-list">
-
 
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-arrows-alt"></i> fa-arrows-alt</a></div>
@@ -916,13 +1707,14 @@
     <div class="alert alert-success">
         <ul class="margin-bottom-none padding-left-lg">
             <li>All brand icons are trademarks of their respective owners.</li>
-            <li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.</li>
+            <li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor
+                vice versa.
+            </li>
         </ul>
 
     </div>
 
     <div class="row fontawesome-icon-list">
-
 
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-adn"></i> fa-adn</a></div>
@@ -935,7 +1727,8 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bitbucket-square"></i> fa-bitbucket-square</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-btc"></i> fa-btc</a></div>
 
@@ -963,7 +1756,8 @@
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-google-plus"></i> fa-google-plus</a></div>
 
-        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-google-plus-square"></i> fa-google-plus-square</a></div>
+        <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-google-plus-square"></i> fa-google-plus-square</a>
+        </div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-html5"></i> fa-html5</a></div>
 
@@ -1028,7 +1822,6 @@
     <div class="row fontawesome-icon-list">
 
 
-
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-ambulance"></i> fa-ambulance</a></div>
 
         <div class="fa-hover col-md-3 col-sm-4"><a><i class="fa fa-h-square"></i> fa-h-square</a></div>
@@ -1052,7 +1845,6 @@
 </div>
 
 </div>
-
 
 
 </body>

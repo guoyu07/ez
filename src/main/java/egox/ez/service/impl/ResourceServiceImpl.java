@@ -44,7 +44,7 @@ public class ResourceServiceImpl implements ResourceService {
     }
 
     @Override
-    public List<Menu> convetToMenus(List<Resource> resources) {
+    public List<Menu> convertToMenus(List<Resource> resources) {
         Map<Long, Menu> menuMap = new HashMap<Long, Menu>();
         if (resources.isEmpty()) {
             return Collections.EMPTY_LIST;

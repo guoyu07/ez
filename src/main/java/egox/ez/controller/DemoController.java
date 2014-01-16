@@ -11,16 +11,17 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Gavin on 14-1-13.
  */
 @Controller
+@RequestMapping("demo")
 public class DemoController extends AbstractController {
     private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
 
-    @RequestMapping(value = "icon", method = RequestMethod.GET)
-    public ModelAndView icon() {
-        return new ModelAndView("demo/icon");
+    @RequestMapping(value = "font-awesome", method = RequestMethod.GET)
+    public ModelAndView fontAwesome() {
+        return new ModelAndView("demo/font-awesome");
     }
 
     @RequestMapping(value = "ueditor", method = RequestMethod.GET)
-    public ModelAndView ueditor() {
+    public ModelAndView uEditor() {
         return new ModelAndView("demo/ueditor");
     }
 }
