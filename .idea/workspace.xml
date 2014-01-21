@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaf6d6ce-2c0c-4e56-9efa-330074f3855a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/datagrid_data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.combo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.combobox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.combogrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.combotree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.datagrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.gridselector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.icons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.linkbutton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.panel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.theme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.tree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.treegrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.validatebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.window.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-comboicons/jquery.comboicons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-comboselector/jquery.comboselector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/jquery.portal.bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/jquery.portal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-toolbar/jquery.toolbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/portal.bak.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/portal.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/portal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/egox/ext/fastjson/FastJsonJsonView.java" afterPath="$PROJECT_DIR$/src/main/java/egox/ext/fastjson/FastJsonJsonView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/egox/ez/controller/ResourceController.java" afterPath="$PROJECT_DIR$/src/main/java/egox/ez/controller/ResourceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/egox/ez/service/ResourceService.java" afterPath="$PROJECT_DIR$/src/main/java/egox/ez/service/ResourceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/egox/ez/service/impl/ResourceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/egox/ez/service/impl/ResourceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ez.iml" afterPath="$PROJECT_DIR$/ez.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ez_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ez_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/import-easyui.jspf" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/import-easyui.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/jquery.easyui.custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/jquery.easyui.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/dev/json/jsonRequest.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/dev/json/jsonRequest.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sys/resource.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sys/resource.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__com_alibaba_druid_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_1.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_mybatis_mybatis_3_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_4.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_aop_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_beans_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_context_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_core_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_expression_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_jdbc_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_oxm_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_test_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_tx_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_web_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\workspaces\git\ez\.idea\libraries\Maven__org_springframework_spring_webmvc_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_0_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="ez.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,7 +57,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/egox/ez/controller/ResourceController.java" line="57" class="egox.ez.controller.ResourceController" package="egox.ez.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -140,7 +86,7 @@
       <file leaf-file-name="resource.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sys/resource.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="53" selection-start="1762" selection-end="1762" vertical-scroll-proportion="-6.3461537" vertical-offset="668" max-vertical-offset="1156">
+            <state line="49" column="53" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -149,7 +95,7 @@
       <file leaf-file-name="ResourceMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/dao/ResourceMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="45" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1700">
+            <state line="80" column="45" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1751">
               <folding />
             </state>
           </provider>
@@ -158,7 +104,7 @@
       <file leaf-file-name="jquery.easyui.custom.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/jquery.easyui.custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="7" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -167,7 +113,7 @@
       <file leaf-file-name="head.jspf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="-6.5" vertical-offset="35" max-vertical-offset="459">
+            <state line="12" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -176,7 +122,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="40" selection-start="2145" selection-end="2145" vertical-scroll-proportion="1.7457212" vertical-offset="255" max-vertical-offset="5984">
+            <state line="57" column="40" selection-start="2145" selection-end="2145" vertical-scroll-proportion="2.222477" vertical-offset="0" max-vertical-offset="5984">
               <folding />
             </state>
           </provider>
@@ -360,6 +306,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -664,7 +611,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -744,19 +690,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="myFilePath" />
@@ -774,6 +707,19 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1055,11 +1001,12 @@
       <workItem from="1390020169582" duration="787000" />
       <workItem from="1390201083585" duration="2578000" />
       <workItem from="1390219896094" duration="11354000" />
+      <workItem from="1390294578729" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131098000" />
+    <option name="totallyTimeSpent" value="131103000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1083,7 +1030,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1092,14 +1039,13 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3795424" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37859008" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3795424" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3785235" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1107,13 +1053,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2618742" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3703466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3703466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973083" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1156,9 +1103,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/west.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="374">
-          <folding />
-        </state>
+        <state line="8" column="33" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/controller/SecurityController.java">
@@ -1188,9 +1133,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="17" column="25" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/dao/PermissionMapper.java">
@@ -1210,25 +1153,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="51" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/service/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="442">
-          <folding />
-        </state>
+        <state line="16" column="33" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/sidenav.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="8" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/controller/DemoController.java">
@@ -1243,16 +1178,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/north.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="205" selection-end="205" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="8585">
-          <folding />
-        </state>
+        <state line="6" column="39" selection-start="205" selection-end="205" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="8585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/dev/json/s.css">
@@ -1297,9 +1228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/dev/json/jsonRequest.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="554" selection-end="554" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
+        <state line="15" column="23" selection-start="554" selection-end="554" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jquery-easyui-portal/portal.css">
@@ -1309,9 +1238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="56" selection-start="3858" selection-end="3858" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1836">
-          <folding />
-        </state>
+        <state line="69" column="56" selection-start="3858" selection-end="3858" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.1.37/fastjson-1.1.37.jar!/com/alibaba/fastjson/support/spring/FastJsonJsonView.class">
@@ -1321,23 +1248,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ext/fastjson/FastJsonJsonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="15" column="18" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="18" column="28" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/center.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="18" column="26" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui-extensions/jeasyui.extensions.js">
@@ -1347,37 +1268,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/ext/jeasyui.extensions.all.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6153" selection-start="6756" selection-end="6797" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1377">
-          <folding />
-        </state>
+        <state line="24" column="6153" selection-start="6756" selection-end="6797" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/import-easyui.jspf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="63" selection-start="3090" selection-end="3096" vertical-scroll-proportion="-10.423077" vertical-offset="290" max-vertical-offset="663">
-          <folding />
-        </state>
+        <state line="33" column="63" selection-start="3090" selection-end="3096" vertical-scroll-proportion="-10.423077" vertical-offset="290" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/easyui/Datagrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.54611653" vertical-offset="13" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.54611653" vertical-offset="13" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/easyui/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="380" selection-end="387" vertical-scroll-proportion="0.53640777" vertical-offset="17" max-vertical-offset="1190">
-          <folding />
-        </state>
+        <state line="15" column="26" selection-start="380" selection-end="387" vertical-scroll-proportion="0.53640777" vertical-offset="17" max-vertical-offset="1190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/easyui/TreeGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.33009708" vertical-offset="0" max-vertical-offset="412">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.33009708" vertical-offset="0" max-vertical-offset="412" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/plugins/jeasyui/jquery.easyui.custom.js">
@@ -1389,16 +1300,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="-6.5" vertical-offset="35" max-vertical-offset="459">
+        <state line="12" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/service/ResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="376" selection-end="376" vertical-scroll-proportion="0.6699029" vertical-offset="13" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="19" column="9" selection-start="376" selection-end="376" vertical-scroll-proportion="0.6699029" vertical-offset="13" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/controller/ResourceController.java">
@@ -1410,23 +1319,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/service/impl/ResourceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="966" selection-end="984" vertical-scroll-proportion="0.08755761" vertical-offset="404" max-vertical-offset="1479">
-          <folding />
-        </state>
+        <state line="37" column="32" selection-start="966" selection-end="984" vertical-scroll-proportion="0.08755761" vertical-offset="404" max-vertical-offset="1479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sys/resource.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="53" selection-start="1762" selection-end="1762" vertical-scroll-proportion="-6.3461537" vertical-offset="668" max-vertical-offset="1156">
+        <state line="49" column="53" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/bean/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.6843318" vertical-offset="765" max-vertical-offset="4590">
-          <folding />
-        </state>
+        <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.6843318" vertical-offset="765" max-vertical-offset="4590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/egox/ez/dao/ResourceMapper.java">
@@ -1438,7 +1343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="40" selection-start="2145" selection-end="2145" vertical-scroll-proportion="1.7457212" vertical-offset="255" max-vertical-offset="5984">
+        <state line="57" column="40" selection-start="2145" selection-end="2145" vertical-scroll-proportion="2.222477" vertical-offset="0" max-vertical-offset="5984">
           <folding />
         </state>
       </provider>
