@@ -10,7 +10,13 @@
         window.QuoteKeys = true;
 
         function getByUrl() {
-            $.get("${ctx}/" + $('#requestUrl').val(), function(rep) {
+            var url = $('#requestUrl').val();
+            if (!url || url.indexOf('.json') == -1) {
+                alert("请输入正确的url");
+                return;
+            }
+
+            $.get("${ctx}/" + url, function(rep) {
                 $('#RawJson').val(rep);
                 Process();
             });

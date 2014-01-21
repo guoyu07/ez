@@ -18,7 +18,7 @@ import java.util.Map;
  */
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Service("resourceService")
-public class ResourceServiceImpl implements ResourceService {
+public class ResourceServiceImpl implements ResourceService{
 
     @Autowired
     private ResourceMapper resourceMapper;
@@ -31,6 +31,11 @@ public class ResourceServiceImpl implements ResourceService {
     @Override
     public Resource getResourceById(Long id) {
         return resourceMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public void save(Resource resource) {
+        resourceMapper.updateByPrimaryKey(resource);
     }
 
     @Override
